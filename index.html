@@ -47,79 +47,87 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="nav list">
-                    <li class="nav__item">
-                        <a href="#">О нас</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#">Услуги и цены</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#">Мастера</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-                <a class="menu-container__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="button">онлайн-запись</button>
+                <div class="nav-block">
+                    <ul class="nav list">
+                        <li class="nav__item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Услуги и цены</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Мастера</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-tel">
+                    <a class="menu-container__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+                    <button class="button">онлайн-запись</button>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="hero-right">
-            <ul class="social-networks list">
-                <li class="social-networks__item">
-                    <a class="social-networks__link" href="#" target="_blank">Instagram</a>
-                </li>
-                <li class="social-networks__item">
-                    <a class="social-networks__link" href="#" target="_blank">Youtube</a>
-                </li>
-            </ul>
-            <a href="#">
-                <svg class="hero-right__icon">
-                    <use href="./images/icons.svg#icon-logo-m2x"></use>
-                </svg>
-            </a>
-        </section>
-        <section class="hero-left">
-            <div class="hero-left__container">
-                <p class="hero-left__pre-title pre-title">A hair salon for men in Kyiv</p>
-                <h1 class="hero-left__title title">BarberShop</h1>
-                <p class="hero-left__sub-title sub-title">Мы эксперты в модных мужских стрижках.
-                Работаем быстро, осторожно и со вкусом.</p>
-            </div>
-        </section>
+        <div class="hero">
+            <section class="hero-right">
+                <ul class="social-networks list">
+                    <li class="social-networks__item">
+                        <a class="social-networks__link" href="#" target="_blank">Instagram</a>
+                    </li>
+                    <li class="social-networks__item">
+                        <a class="social-networks__link" href="#" target="_blank">Youtube</a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <svg class="hero-right__icon">
+                        <use href="./images/icons.svg#icon-logo-m2x"></use>
+                    </svg>
+                </a>
+            </section>
+            <section class="hero-left">
+                <div class="hero-left__container">
+                    <p class="hero-left__pre-title pre-title">A hair salon for men in Kyiv</p>
+                    <h1 class="hero-left__title title">BarberShop</h1>
+                    <p class="hero-left__sub-title sub-title">Мы эксперты в модных мужских стрижках.
+                    Работаем быстро, осторожно и со вкусом.</p>
+                </div>
+            </section>
+        </div>
         <section class="about section">
                 <div class="container">
-                <div class="about__container-right">
-                    <picture>
-                        <source media="(max-width: 1199px)" srcset="./images/tablet/about-img1-t1x.jpg 1x, ./images/tablet/about-img1-t2x.jpg 2x">
+                <div class="about-wrap">
+                    <div class="about__container-right">
+                        <picture>
+                            <source media="(max-width: 1199px)" srcset="./images/tablet/about-img1-t1x.jpg 1x, ./images/tablet/about-img1-t2x.jpg 2x">
 
-                        <source media="(min-width: 1200px)" srcset="./images/desktop/about1-d1x.jpg 1x, ./images/desktop/about1-d2x.jpg 2x">
-                        
-                        <img src="./images/desktop/about1-d1x.jpg" alt="Мастер наносит крем для бритья">
-                    </picture>
+                            <source media="(min-width: 1200px)" srcset="./images/desktop/about1-d1x.jpg 1x, ./images/desktop/about1-d2x.jpg 2x">
+                            
+                            <img src="./images/desktop/about1-d1x.jpg" alt="Мастер наносит крем для бритья">
+                        </picture>
 
-                    <picture>
-                        <source media="(max-width: 1199px)" srcset="./images/tablet/about-img2-t1x.jpg 1x, ./images/tablet/about-img2-t2x.jpg 2x">
+                        <picture>
+                            <source media="(max-width: 1199px)" srcset="./images/tablet/about-img2-t1x.jpg 1x, ./images/tablet/about-img2-t2x.jpg 2x">
 
-                        <source media="(min-width: 1200px)" srcset="./images/desktop/about2-d1x.jpg 1x, ./images/desktop/about2-d2x.jpg 2x">
+                            <source media="(min-width: 1200px)" srcset="./images/desktop/about2-d1x.jpg 1x, ./images/desktop/about2-d2x.jpg 2x">
 
-                        <img src="./images/desktop/about2-d1x.jpg" alt="Мастер формирует окантовку">
-                    </picture>
+                            <img src="./images/desktop/about2-d1x.jpg" alt="Мастер формирует окантовку">
+                        </picture>
+                    </div>
+                    <div class="about__container-left">
+                        <p class="about__pre-title pre-title">О НАС</p>
+                        <h2 class="about__title title">Лучший Барбершоп
+                            твоего города</h2>
+                        <p class="about__sub-title">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                        <p class="about__text text">Мы команда, которая никогда не останавливается на достигнутом
+                            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
+                            готовы усовершенствовать каждого, кто к нам приходит!</p>
+                    </div>
+                    <button class="button">онлайн-запись</button>
                 </div>
-                <div class="about__container-left">
-                    <p class="about__pre-title pre-title">О НАС</p>
-                    <h2 class="about__title title">Лучший Барбершоп
-                        твоего города</h2>
-                    <p class="about__sub-title">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-                    <p class="about__text">Мы команда, которая никогда не останавливается на достигнутом
-                        и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-                        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
-                        готовы усовершенствовать каждого, кто к нам приходит!</p>
-                </div>
-                <button class="button">онлайн-запись</button>
             </div>
         </section>
 
@@ -204,8 +212,8 @@
 
         <section class="masters section">
             <div class="container">
-                <p class="masters__pre-title pre-title"></p>
-                <h2 class="masters__title title"></h2>
+                <p class="masters__pre-title pre-title">для настоящих ценителей атмосферы</p>
+                <h2 class="masters__title title">Наши мастера</h2>
                 <ul class="masters__list list">
                     <li class="masters__item">
                         <picture>
@@ -447,6 +455,6 @@
         </div>
     </footer>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
