@@ -24,8 +24,161 @@ img {
   height: auto;
 }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
+.pre-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #303030;
+}
+
+.pre-title::before {
+  content: ' ';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  margin-bottom: 3px;
+  background: #303030;
+}
+
+.button {
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-header {
+    position: relative;
+  }
+  .menu-btn {
+    z-index: 1;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+  }
+  .btn-close-menu,
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .menu-btn .icon-cross {
+    display: block;
+  }
+  .menu-btn.is-open .icon-cross {
+    display: none;
+  }
+  .menu-btn.is-open .icon-menu {
+    display: block;
+  }
+  .menu-btn .icon-menu {
+    display: none;
+  }
+  .menu-btn:hover .icon-cross,
+  .menu-btn:focus .icon-cross {
+    fill: #ff6c00;
+  }
+  .menu-btn:hover .icon-menu,
+  .menu-btn:focus .icon-menu {
+    fill: #ff6c00;
+  }
+  .nav-block,
+  .header-tel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    opacity: 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .menu-container.is-open {
+    opacity: 1;
+    pointer-events: initial;
+    position: fixed;
+    overflow-y: scroll;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 767) {
+  .hero {
+    max-width: 767px;
+    background-image: url("../images/mobile/hero-m1x.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767) and (min-device-pixel-ratio: 2), screen and (max-width: 767) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767) and (min-resolution: 192dpi), screen and (max-width: 767) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/mobile/hero-m2x.jpg");
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__container-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    color: #303030;
+  }
+  .sub-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.02em;
+    color: #555555;
+  }
 }
 /*# sourceMappingURL=main.css.map */

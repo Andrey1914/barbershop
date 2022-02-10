@@ -1,0 +1,53 @@
+@media screen and (max-width: 767px) {
+  .container-header {
+    position: relative;
+  }
+
+  .menu-btn {
+    z-index: 1;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .btn-close-menu,
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-btn .icon-cross {
+    display: block;
+  }
+
+  .menu-btn.is-open .icon-cross {
+    display: none;
+  }
+
+  .menu-btn.is-open .icon-menu {
+    display: block;
+  }
+
+  .menu-btn .icon-menu {
+    display: none;
+  }
+
+  .menu-btn:hover .icon-cross,
+  .menu-btn:focus .icon-cross {
+    fill: $accent-color;
+  }
+
+  .menu-btn:hover .icon-menu,
+  .menu-btn:focus .icon-menu {
+    fill: $accent-color;
+  }
+
+  .nav-block,
+  .header-tel {
+    display: none;
+  }
+}

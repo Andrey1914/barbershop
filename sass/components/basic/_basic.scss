@@ -1,4 +1,38 @@
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
+.pre-title {
+  font-family: $text-font;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: $secondary-title-color;
+}
+
+.pre-title::before {
+  content: ' ';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  margin-bottom: 3px;
+  background: $secondary-title-color;
+}
+
+.button {
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  border: 1px solid $accent-color;
+  background-color: transparent;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: $secondary-title-color;
 }
