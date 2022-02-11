@@ -1,23 +1,63 @@
 @media screen and (max-width: 767px) {
   .menu-container {
-    opacity: 0;
+    transform: translateX(101%);
+    transition: transform 500ms $timing-function,
+      visibility 500ms $timing-function;
 
     background-color: $page-bg-color;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    padding: 48px 40px;
-    transition: opacity 250ms $timing-function;
+    right: 0;
+    padding: 118px 105px 270px 50px;
     pointer-events: none;
     visibility: hidden;
 
     &.is-open {
-      opacity: 1;
+      transform: translateX(-0%);
       pointer-events: initial;
       position: fixed;
       overflow-y: scroll;
       visibility: visible;
     }
+
+    &__tel {
+      display: block;
+      margin-bottom: 24px;
+
+      font-family: $text-font;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      color: $secondary-title-color;
+    }
+  }
+
+  .menu-nav {
+    margin-bottom: 64px;
+    &__item:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &__link {
+      font-family: $text-font;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.1em;
+
+      color: $secondary-title-color;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: $accent-color;
+    }
+  }
+
+  .menu-button {
+    margin-bottom: 64px;
   }
 }

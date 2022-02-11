@@ -1,5 +1,7 @@
-@media screen and (max-width: 767) {
+@media screen and (max-width: 767px) {
   .hero {
+    padding-top: 208px;
+    padding-bottom: 183px;
     max-width: 767px;
     background-image: url('../images/mobile/hero-m1x.jpg');
     background-size: cover;
@@ -10,6 +12,18 @@
     (min-resolution: 2dppx) {
     .hero {
       background-image: url('../images/mobile/hero-m2x.jpg');
+    }
+  }
+
+  .hero-right {
+    width: 306px;
+    &__title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1.16;
+      letter-spacing: 0.05em;
+
+      color: $primary-title-color;
     }
   }
 }

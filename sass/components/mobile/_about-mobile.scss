@@ -1,7 +1,18 @@
 @media screen and (max-width: 767px) {
   .about {
-    &__container-right {
+    &__container-left {
       display: none;
     }
+  }
+}
+
+.about {
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+
+    color: $secondary-title-color;
   }
 }

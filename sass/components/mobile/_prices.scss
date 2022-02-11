@@ -1,0 +1,41 @@
+@media screen and (max-width: 767px) {
+  .prices {
+    max-width: 767px;
+    background-image: url('../images/mobile/prices-m1x.png');
+    background-size: cover;
+
+    &__container {
+      width: 418px;
+      padding: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      background-image: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
+    }
+
+    &__title {
+      margin-bottom: 44px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 30px;
+
+      letter-spacing: 0.02em;
+
+      color: $secondary-text-color;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .prices {
+      background-image: url('../images/mobile/prices-m2x.png');
+    }
+  }
+}

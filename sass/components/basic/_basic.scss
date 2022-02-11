@@ -1,3 +1,59 @@
+.hero-right {
+  &__pre-title {
+    color: rgba(157, 164, 189, 0.6);
+  }
+
+  &__title {
+    color: $primary-title-color;
+  }
+
+  &__sub-title {
+    color: $secondary-text-color;
+  }
+}
+
+.prices {
+  &__pre-title {
+    color: rgba(157, 164, 189, 0.6);
+  }
+
+  &__title {
+    color: $primary-title-color;
+  }
+}
+
+.title {
+  font-family: $head-font;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 20px;
+}
+
+.sub-title,
+.text {
+  font-family: $text-font;
+
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+}
+
+.sub-title {
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.pre-title::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
 .pre-title {
   font-family: $text-font;
   font-weight: 600;
@@ -7,18 +63,28 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 20px;
-
-  color: $secondary-title-color;
 }
 
 .pre-title::before {
-  content: ' ';
+  content: '';
   display: inline-block;
   width: 60px;
   height: 1px;
   margin-right: 20px;
-  margin-bottom: 3px;
-  background: $secondary-title-color;
+  margin-bottom: 4px;
+  // background: $secondary-title-color;
+}
+
+.social-networks {
+  &__item:first-child::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+    margin-bottom: 6px;
+    background: $secondary-title-color;
+  }
 }
 
 .button {
@@ -35,4 +101,66 @@
   text-transform: uppercase;
 
   color: $secondary-title-color;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $accent-color;
+  color: $primary-title-color;
+}
+
+.prices {
+  &__item-left,
+  &__item-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__item-left,
+  &__item-right:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__item-left::before,
+  &__item-right::before {
+    content: '';
+    margin-left: 6px;
+    margin-right: 6px;
+    flex-grow: 1;
+
+    border-bottom: 1px solid
+      rgba(157, 164, 189, 0.12);
+  }
+
+  &__text:first-child {
+    order: -1;
+  }
+}
+.prices-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: $primary-title-color;
+}
+
+.logo {
+  &__icon {
+    width: 65px;
+    height: 55px;
+  }
+}
+
+.about {
+  &__container-right {
+    margin-bottom: 40px;
+  }
+
+  &__sub-title {
+    margin-bottom: 20px;
+  }
+}
+
+.prices {
+  background-color: $section-bg-color;
 }
