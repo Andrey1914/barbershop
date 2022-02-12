@@ -1,0 +1,33 @@
+@media screen and (max-width: 1199px) {
+  .benefits {
+    &__sub-title {
+      margin-bottom: 44px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      height: 133px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .benefits {
+    &__list {
+      width: 416px;
+    }
+
+    &__item {
+      width: 193px;
+      padding: 20px 36px;
+    }
+
+    &__item--diferent {
+      padding: 20px 32px;
+    }
+  }
+}

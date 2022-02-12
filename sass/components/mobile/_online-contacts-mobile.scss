@@ -1,0 +1,65 @@
+@media screen and (max-width: 767px) {
+  .online-contacts {
+    max-width: 767px;
+    background-image: url('../images/mobile/contacts-bg-m1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .prices {
+        background-image: url('../images/mobile/contacts-bg-m2x.png');
+      }
+    }
+  }
+  .online {
+    padding-bottom: 84px;
+  }
+
+  .online-form {
+    &__input-name,
+    &__input-tel,
+    &__comment {
+      display: block;
+      width: 100%;
+      margin-bottom: 44px;
+    }
+
+    &__input-name,
+    &__input-tel {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    &__comment {
+      resize: none;
+      height: 75px;
+    }
+  }
+
+  .contacts {
+    padding-top: 84px;
+    &__sub-title {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      color: $primary-title-color;
+    }
+
+    &__sub-title::before {
+      content: '';
+      display: inline-block;
+      width: 60px;
+      margin-right: 20px;
+      margin-bottom: 4px;
+      border-bottom: 1px solid
+        rgba(157, 164, 189, 0.4);
+    }
+  }
+}

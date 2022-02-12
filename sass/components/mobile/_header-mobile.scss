@@ -2,11 +2,11 @@
   .header {
     position: absolute;
     width: 100%;
-    padding-top: 40px;
   }
 
   .logo {
     &__icon {
+      margin-top: 40px;
       fill: #ffffff;
     }
   }

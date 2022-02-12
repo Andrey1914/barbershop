@@ -1,5 +1,9 @@
 @media screen and (max-width: 767px) {
   .social-networks {
+    &__list {
+      margin-bottom: 20px;
+    }
+
     &__link {
       font-family: $text-font;
       font-weight: 600;

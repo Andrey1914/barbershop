@@ -4,6 +4,14 @@
     background-image: url('../images/mobile/prices-m1x.png');
     background-size: cover;
 
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .prices {
+        background-image: url('../images/mobile/prices-m2x.png');
+      }
+    }
+
     &__container {
       width: 418px;
       padding: 30px;
@@ -28,14 +36,6 @@
       letter-spacing: 0.02em;
 
       color: $secondary-text-color;
-    }
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .prices {
-      background-image: url('../images/mobile/prices-m2x.png');
     }
   }
 }

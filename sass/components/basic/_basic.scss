@@ -12,13 +12,10 @@
   }
 }
 
-.prices {
-  &__pre-title {
-    color: rgba(157, 164, 189, 0.6);
-  }
-
-  &__title {
-    color: $primary-title-color;
+.logo {
+  &__icon {
+    width: 65px;
+    height: 55px;
   }
 }
 
@@ -110,6 +107,16 @@
 }
 
 .prices {
+  &__pre-title {
+    color: rgba(157, 164, 189, 0.6);
+  }
+
+  &__title {
+    color: $primary-title-color;
+  }
+}
+
+.prices {
   &__item-left,
   &__item-right {
     display: flex;
@@ -137,18 +144,16 @@
     order: -1;
   }
 }
+
+.prices {
+  background-color: $section-bg-color;
+}
+
 .prices-btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
   color: $primary-title-color;
-}
-
-.logo {
-  &__icon {
-    width: 65px;
-    height: 55px;
-  }
 }
 
 .about {
@@ -161,6 +166,174 @@
   }
 }
 
-.prices {
-  background-color: $section-bg-color;
+.benefits {
+  &__item {
+    background-color: #f7f7f7;
+  }
+
+  &__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  &__item:nth-child(even) {
+    margin-top: 30px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+
+    color: $secondary-title-color;
+  }
+
+  &__numbers {
+    display: block;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+
+    color: $secondary-title-color;
+  }
+}
+
+.masters {
+  background-color: #f7f7f7;
+
+  &__card {
+    margin-bottom: 30px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  &__name {
+    font-family: $text-font;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    margin-bottom: 8px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: $secondary-title-color;
+  }
+
+  &__text {
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 1.35;
+
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+  }
+}
+
+.online-contacts {
+  background-color: #191c26;
+}
+
+.online-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 44px;
+
+  color: $primary-title-color;
+}
+
+.online-form {
+  &__input-name,
+  &__input-tel,
+  &__comment {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $primary-title-color;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid
+      rgba(157, 164, 189, 0.4);
+
+    outline: none;
+  }
+
+  &__input-name:hover,
+  &__input-tel:hover,
+  &__comment:hover {
+    border-bottom: 1px solid $page-bg-color;
+  }
+
+  &__input-name:hover::placeholder,
+  &__input-tel:hover::placeholder,
+  &__comment:hover::placeholder {
+    color: $primary-title-color;
+  }
+}
+
+.contacts-title {
+  font-family: $head-font;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+
+  color: $primary-title-color;
+}
+
+.contacts {
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  &__list {
+    margin-bottom: 44px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.66;
+
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+  }
+
+  &__sub-title {
+    margin-bottom: 20px;
+  }
+
+  &__schedule {
+    font-size: 18px;
+    line-height: 1.66;
+
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+  }
 }

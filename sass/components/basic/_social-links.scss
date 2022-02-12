@@ -1,0 +1,33 @@
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__item {
+    width: 44px;
+    border-radius: 50%;
+    background-color: $page-bg-color;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $secondary-title-color;
+  }
+
+  &__link:hover &__icon {
+    fill: $accent-color;
+  }
+}
