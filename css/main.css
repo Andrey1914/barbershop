@@ -521,7 +521,6 @@ img {
   .hero {
     padding-top: 208px;
     padding-bottom: 183px;
-    max-width: 767px;
     background-image: url("../images/mobile/hero-m1x.jpg");
     background-size: cover;
   }
@@ -653,7 +652,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .online-contacts {
-    max-width: 767px;
     background-image: url("../images/mobile/contacts-bg-m1x.png");
     background-size: contain;
     background-repeat: no-repeat;
