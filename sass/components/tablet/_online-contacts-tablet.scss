@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .online-contacts {
+    background-image: url('../images/tablet/contacts-bg-t1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .prices {
+        background-image: url('../images/tablet/contacts-bg-t2x.png');
+      }
+    }
+  }
+}

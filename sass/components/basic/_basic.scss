@@ -69,7 +69,6 @@
   height: 1px;
   margin-right: 20px;
   margin-bottom: 4px;
-  // background: $secondary-title-color;
 }
 
 .social-networks {
@@ -333,6 +332,29 @@
     line-height: 1.66;
 
     letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+  }
+}
+
+.social-networks {
+  &__list--footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item--footer:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.footer {
+  &__copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.2em;
 
     color: $secondary-text-color;
   }

@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .prices {
-    max-width: 767px;
+    // max-width: 767px;
     background-image: url('../images/mobile/prices-m1x.png');
     background-size: cover;
 
@@ -13,7 +13,6 @@
     }
 
     &__container {
-      width: 418px;
       padding: 30px;
       margin-left: auto;
       margin-right: auto;

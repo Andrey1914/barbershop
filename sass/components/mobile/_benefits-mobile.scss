@@ -1,6 +1,7 @@
 @media screen and (max-width: 1199px) {
   .benefits {
     &__sub-title {
+      max-width: 500px;
       margin-bottom: 44px;
     }
 
@@ -15,14 +16,14 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .benefits {
     &__list {
-      width: 416px;
+      max-width: 416px;
+      margin-left: auto;
     }
-
     &__item {
-      width: 193px;
+      max-width: 193px;
       padding: 20px 36px;
     }
 

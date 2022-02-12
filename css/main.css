@@ -339,6 +339,27 @@ img {
   color: #9da4bd;
 }
 
+.social-networks__list--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social-networks__item--footer:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer__copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+
 .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,7 +404,7 @@ img {
   fill: #ff6c00;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -455,7 +476,7 @@ img {
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #ffffff;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     padding: 118px 105px 270px 50px;
@@ -466,7 +487,6 @@ img {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     pointer-events: initial;
-    position: fixed;
     overflow-y: auto;
     visibility: visible;
   }
@@ -546,6 +566,11 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .about-wrap {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .about__container-left {
     display: none;
   }
@@ -561,7 +586,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .prices {
-    max-width: 767px;
     background-image: url("../images/mobile/prices-m1x.png");
     background-size: cover;
   }
@@ -575,7 +599,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .prices__container {
-    width: 418px;
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -596,6 +619,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .benefits__sub-title {
+    max-width: 500px;
     margin-bottom: 44px;
   }
   .benefits__list {
@@ -610,12 +634,13 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .benefits__list {
-    width: 416px;
+    max-width: 416px;
+    margin-left: auto;
   }
   .benefits__item {
-    width: 193px;
+    max-width: 193px;
     padding: 20px 36px;
   }
   .benefits__item--diferent {
@@ -624,7 +649,16 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .gallery {
+  .masters__wrap {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__wrap {
+    max-width: 420px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -707,6 +741,21 @@ img {
   .footer {
     padding-top: 44px;
     padding-bottom: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .online-contacts {
+    background-image: url("../images/tablet/contacts-bg-t1x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .online-contacts .prices {
+    background-image: url("../images/tablet/contacts-bg-t2x.png");
   }
 }
 /*# sourceMappingURL=main.css.map */

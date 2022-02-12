@@ -5,7 +5,7 @@
       visibility 500ms $timing-function;
 
     background-color: $page-bg-color;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     padding: 118px 105px 270px 50px;
@@ -13,9 +13,8 @@
     visibility: hidden;
 
     &.is-open {
-      transform: translateX(-0%);
+      transform: translateX(0%);
       pointer-events: initial;
-      position: fixed;
       overflow-y: auto;
       visibility: visible;
     }
