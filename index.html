@@ -206,7 +206,7 @@
                             <span class="benefits__numbers">20</span>
                             <p class="benefits__text">Лучших мастеров Киева</p>
                         </li>
-                        <li class="benefits__item">
+                        <li class="benefits__item benefits__item--diferent">
                             <span class="benefits__numbers">100</span>
                             <p class="benefits__text">Подарков постоянным клиентам</p>
                         </li>
@@ -228,7 +228,7 @@
 
                             <source media="(min-width: 1200px)" srcset="./images/desktop/john-d1x.jpg 1x, ./images/desktop/john-d2x.jpg 2x">
 
-                            <img src="./images/desktop/john-d1x.jpg" alt="Мастер делает стрижку">
+                            <img class="masters__card" src="./images/desktop/john-d1x.jpg" alt="Мастер делает стрижку">
                         </picture>
                         <h3 class="masters__name">John Smith</h3>
                         <p class="masters__text">Extreme Barber</p>
@@ -271,7 +271,7 @@
                             
                             <source media="(min-width: 1200px)" srcset="./images/desktop/michele-d1x.jpg 1x, ./images/desktop/michele-d2x.jpg 2x">
                             
-                            <img src="./images/desktop/michele-d1x.jpg" alt="Мастер делает стрижку">
+                            <img class="masters__card" src="./images/desktop/michele-d1x.jpg" alt="Мастер делает стрижку">
                         </picture>
                         <h3 class="masters__name">Michele Doe</h3>
                         <p class="masters__text">Extreme Barber</p>
@@ -314,14 +314,14 @@
                             
                             <source media="(min-width: 1200px)" srcset="./images/desktop/alan-d1x.jpg 1x, ./images/desktop/alan-d2x.jpg 2x">
                             
-                            <img src="./images/desktop/alan-d1x.jpg" alt="Мастер делает стрижку">
+                            <img class="masters__card" src="./images/desktop/alan-d1x.jpg" alt="Мастер делает стрижку">
                         </picture>
                         <h3 class="masters__name">Alan Black</h3>
                         <p class="masters__text">Extreme Barber</p>
                         <ul class="social-links list">
                             <li class="social-links__item">
                                 <a class="social-links__link" href="">
-                                    <svg>
+                                    <svg class="social-links__icon">
                                         <use href="./images/icons.svg#icon-instagram" target="_blank"></use>
                                     </svg>
                                 </a>
@@ -356,45 +356,52 @@
         <section class="gallery section">
             <div class="container">
                 <p class="gallery__pre-title pre-title">На латинском языке “барба” означает “борода”</p>
-                <picture>
-                    <source media="(max-width: 767px)" srcset="./images/mobile/foto1-m1x.jpg 1x, ./images/mobile/foto1-m2x.jpg 2x">
-                    
-                    <source media="(min-width: 1199px)" srcset="./images/tablet/foto1-t1x.jpg 1x, ./images/tablet/foto1-t2x.jpg 2x">
-                    
-                    <source media="(min-width: 1200px)" srcset="./images/desktop/foto1-d1x.jpg 1x, ./images/desktop/foto1-d2x.jpg 2x">
-                    
-                    <img src="./images/desktop/foto1-d1x.jpg" alt="Мастер делает стрижку">
-                </picture>
-
-                <picture>
-                    <source media="(max-width: 767px)" srcset="./images/mobile/foto2-m1x.jpg 1x, ./images/mobile/foto2-m2x.jpg 2x">
-                    
-                    <source media="(min-width: 1199px)" srcset="./images/tablet/foto2-t1x.jpg 1x, ./images/tablet/foto2-t2x.jpg 2x">
-                    
-                    <source media="(min-width: 1200px)" srcset="./images/desktop/foto2-d1x.jpg 1x, ./images/desktop/foto2-d2x.jpg 2x">
-                    
-                    <img src="./images/desktop/foto2-d1x.jpg" alt="Мастер наносит крем для бритья">
-                </picture>
-
-                <picture>
-                    <source media="(max-width: 767px)" srcset="./images/mobile/foto3-m1x.jpg 1x, ./images/mobile/foto3-m2x.jpg 2x">
-                    
-                    <source media="(min-width: 1199px)" srcset="./images/tablet/foto3-t1x.jpg 1x, ./images/tablet/foto3-t2x.jpg 2x">
-                    
-                    <source media="(min-width: 1200px)" srcset="./images/desktop/foto3-d1x.jpg 1x, ./images/desktop/foto3-d2x.jpg 2x">
-                    
-                    <img src="./images/desktop/foto3-d1x.jpg" alt="Мастер распаривает лицо клиента полотенцем">
-                </picture>
-
-                <picture>
-                    <source media="(max-width: 767px)" srcset="./images/mobile/foto4-m1x.jpg 1x, ./images/mobile/foto4-m2x.jpg 2x">
-                    
-                    <source media="(min-width: 1199px)" srcset="./images/tablet/foto4-t1x.jpg 1x, ./images/tablet/foto4-t2x.jpg 2x">
-                    
-                    <source media="(min-width: 1200px)" srcset="./images/desktop/foto4-d1x.jpg 1x, ./images/desktop/foto4-d2x.jpg 2x">
-                    
-                    <img src="./images/desktop/foto4-d1x.jpg" alt="Мастер формирует окантовку">
-                </picture>
+                <ul class="gallery__list list">
+                    <li class="gallery__item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/mobile/foto1-m1x.jpg 1x, ./images/mobile/foto1-m2x.jpg 2x">
+                            
+                            <source media="(min-width: 1199px)" srcset="./images/tablet/foto1-t1x.jpg 1x, ./images/tablet/foto1-t2x.jpg 2x">
+                            
+                            <source media="(min-width: 1200px)" srcset="./images/desktop/foto1-d1x.jpg 1x, ./images/desktop/foto1-d2x.jpg 2x">
+                            
+                            <img class="gallery__card" src="./images/desktop/foto1-d1x.jpg" alt="Мастер делает стрижку">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/mobile/foto2-m1x.jpg 1x, ./images/mobile/foto2-m2x.jpg 2x">
+                            
+                            <source media="(min-width: 1199px)" srcset="./images/tablet/foto2-t1x.jpg 1x, ./images/tablet/foto2-t2x.jpg 2x">
+                            
+                            <source media="(min-width: 1200px)" srcset="./images/desktop/foto2-d1x.jpg 1x, ./images/desktop/foto2-d2x.jpg 2x">
+                            
+                            <img class="gallery__card" src="./images/desktop/foto2-d1x.jpg" alt="Мастер наносит крем для бритья">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/mobile/foto3-m1x.jpg 1x, ./images/mobile/foto3-m2x.jpg 2x">
+                            
+                            <source media="(min-width: 1199px)" srcset="./images/tablet/foto3-t1x.jpg 1x, ./images/tablet/foto3-t2x.jpg 2x">
+                            
+                            <source media="(min-width: 1200px)" srcset="./images/desktop/foto3-d1x.jpg 1x, ./images/desktop/foto3-d2x.jpg 2x">
+                            
+                            <img class="gallery__card" src="./images/desktop/foto3-d1x.jpg" alt="Мастер распаривает лицо клиента полотенцем">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/mobile/foto4-m1x.jpg 1x, ./images/mobile/foto4-m2x.jpg 2x">
+                            
+                            <source media="(min-width: 1199px)" srcset="./images/tablet/foto4-t1x.jpg 1x, ./images/tablet/foto4-t2x.jpg 2x">
+                            
+                            <source media="(min-width: 1200px)" srcset="./images/desktop/foto4-d1x.jpg 1x, ./images/desktop/foto4-d2x.jpg 2x">
+                            
+                            <img class="gallery__card" src="./images/desktop/foto4-d1x.jpg" alt="Мастер формирует окантовку">
+                        </picture>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -406,8 +413,8 @@
                         <input class="online-form__input-name" name="name" type="text" placeholder="Имя*">
                         <input class="online-form__input-tel" name="tel" type="tel" placeholder="Телефон*">
                         <textarea class="online-form__comment" name="text" placeholder="сообщение"></textarea>
-                        <button type="submit">отправить</button>
                     </form>
+                    <button class="button prices-btn" type="submit">отправить</button>
                 </div>
                 <div class="contacts">
                     <h2 class="contacts-title title">Контакты</h2>
@@ -415,7 +422,7 @@
                         <ul class="contacts__list list">
                             <li class="contacts__item">
                                 <a class="contacts__link" href="#" target="_blank">
-                                    <svg>
+                                    <svg class="contacts__icon">
                                         <use href="./images/icons.svg#icon-map-pin"></use>
                                     </svg>
                                     ул. Васильковая, 7А
@@ -424,7 +431,7 @@
                             </li>
                             <li class="contacts__item">
                                 <a class="contacts__link" href="tel:+380441111111">
-                                    <svg>
+                                    <svg class="contacts__icon">
                                         <use href="./images/icons.svg#icon-phone"></use>
                                     </svg>
                                     +38 044 111 11 11
@@ -432,7 +439,7 @@
                             </li>
                             <li class="contacts__item">
                                 <a class="contacts__link" href="mailto:">
-                                    <svg>
+                                    <svg class="contacts__icon">
                                         <use href="./images/icons.svg#icon-mail"></use>
                                     </svg>
                                     barbershop@email.com
@@ -448,7 +455,6 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <p class="footer__copyright">&#169;Copyright 2020</p>
             <ul class="social-networks__list list">
                 <li class="social-networks__item">
                     <a class="social-networks__link" href="#" target="_blank">Instagram</a>
@@ -457,6 +463,7 @@
                     <a class="social-networks__link" href="#" target="_blank">Youtube</a>
                 </li>
             </ul>
+            <p class="footer__copyright">&#169;Copyright 2020</p>
         </div>
     </footer>
 
