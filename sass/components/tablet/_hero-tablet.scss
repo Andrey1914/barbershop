@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container {
+    display: flex;
+  }
+
+  .hero-right {
+    padding: 280px 157px 234px 70px;
+    background-image: url('../images/tablet/hero1-t1x.jpg');
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-right {
+      background-image: url('../images/tablet/hero1-t2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-left {
+    display: flex;
+    align-items: flex-end;
+    width: 86px;
+    padding: 32px 10px;
+  }
+
+  .social-networks {
+    &__link {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 15px;
+
+      letter-spacing: 0.2em;
+
+      color: #303030;
+    }
+  }
+}

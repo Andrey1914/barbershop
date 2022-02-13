@@ -1,16 +1,4 @@
 @media screen and (max-width: 767px) {
-  .header {
-    position: absolute;
-    width: 100%;
-  }
-
-  .logo {
-    &__icon {
-      margin-top: 40px;
-      fill: #ffffff;
-    }
-  }
-
   .nav,
   .header-conect,
   .hero-left {
@@ -62,5 +50,11 @@
   .menu-btn:hover .icon-menu,
   .menu-btn:focus .icon-menu {
     fill: $accent-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
   }
 }
