@@ -1,5 +1,6 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .online-contacts {
+    background-color: #191c26;
     background-image: url('../images/tablet/contacts-bg-t1x.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -9,8 +10,32 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .prices {
+        background-color: #191c26;
         background-image: url('../images/tablet/contacts-bg-t2x.png');
       }
+    }
+  }
+
+  .online-form {
+    &__list {
+      display: flex;
+      margin: -15px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    &__input-name,
+    &__input-tel {
+      width: 100%;
+      margin-bottom: 44px;
+    }
+
+    &__comment {
+      width: 100%;
+      margin-bottom: 44px;
     }
   }
 }

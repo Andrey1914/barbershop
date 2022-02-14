@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.header-btn {
+  color: $primary-title-color;
+}
+
 .hero-right {
   &__pre-title {
     color: rgba(157, 164, 189, 0.6);
@@ -180,17 +184,6 @@
   background-color: $section-bg-color;
 }
 
-.prices-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color: $primary-title-color;
-}
-
-.header-btn {
-  color: $primary-title-color;
-}
-
 .menu-container {
   &__tel {
     font-weight: 600;
@@ -210,6 +203,10 @@
 }
 
 .about {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
   &__container-right {
     margin-bottom: 40px;
   }
@@ -299,7 +296,7 @@
   font-weight: 700;
   font-size: 42px;
   line-height: 49px;
-  text-align: center;
+
   letter-spacing: 0.05em;
   margin-bottom: 44px;
 
@@ -326,6 +323,10 @@
     outline: none;
   }
 
+  &__comment {
+    resize: none;
+  }
+
   &__input-name:hover,
   &__input-tel:hover,
   &__comment:hover {
@@ -344,7 +345,6 @@
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.05em;
   margin-bottom: 40px;
 

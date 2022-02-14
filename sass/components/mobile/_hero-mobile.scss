@@ -2,6 +2,7 @@
   .hero {
     padding-top: 208px;
     padding-bottom: 183px;
+    background-color: rgba(25, 28, 38, 0.2);
     background-image: url('../images/mobile/hero-m1x.jpg');
     background-size: cover;
   }
@@ -10,6 +11,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
+      background-color: rgba(25, 28, 38, 0.2);
       background-image: url('../images/mobile/hero-m2x.jpg');
     }
   }
