@@ -35,21 +35,15 @@
       width: 100%;
       margin-bottom: 44px;
     }
-
-    &__input-name,
-    &__input-tel {
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-
-    &__comment {
-      resize: none;
-      height: 75px;
-    }
   }
 
   .contacts {
     padding-top: 84px;
+
+    &__list {
+      margin-bottom: 44px;
+    }
+
     &__sub-title {
       font-weight: 600;
       font-size: 11px;

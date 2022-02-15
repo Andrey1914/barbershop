@@ -7,14 +7,16 @@
     display: flex;
     margin-top: 20px;
     margin-left: 60px;
+
     &__item:not(:last-child) {
       margin-right: 24px;
     }
 
     &__link {
+      font-family: $text-font;
       font-weight: 600;
       font-size: 12px;
-      line-height: 16px;
+      line-height: 1.33;
       letter-spacing: 0.1em;
 
       color: $primary-title-color;

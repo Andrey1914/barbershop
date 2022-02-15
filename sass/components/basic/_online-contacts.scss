@@ -1,0 +1,127 @@
+.online-contacts {
+  background-color: #191c26;
+}
+
+.online-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+
+  letter-spacing: 0.05em;
+  margin-bottom: 44px;
+
+  color: $primary-title-color;
+}
+
+.online-form {
+  &__input-name,
+  &__input-tel,
+  &__comment {
+    font-family: $text-font;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $primary-title-color;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid
+      rgba(157, 164, 189, 0.4);
+
+    outline: none;
+  }
+
+  &__input-name,
+  &__input-tel {
+    height: 24px;
+    padding-bottom: 8px;
+  }
+
+  &__comment {
+    resize: none;
+    height: 76px;
+  }
+
+  &__input-name:hover,
+  &__input-tel:hover,
+  &__comment:hover {
+    border-bottom: 1px solid $page-bg-color;
+  }
+
+  &__input-name:hover::placeholder,
+  &__input-tel:hover::placeholder,
+  &__comment:hover::placeholder {
+    color: $primary-title-color;
+  }
+}
+
+.contacts-title {
+  font-family: $head-font;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+
+  color: $primary-title-color;
+}
+
+.contacts {
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    font-family: $text-font;
+    font-size: 18px;
+    line-height: 1.66;
+
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+  }
+
+  &__sub-title {
+    font-family: $text-font;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $primary-title-color;
+  }
+
+  &__sub-title::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    background-color: rgba(157, 164, 189, 0.4);
+  }
+
+  &__schedule {
+    font-family: $text-font;
+    font-size: 18px;
+    line-height: 1.66;
+
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+  }
+}

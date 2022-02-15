@@ -16,6 +16,18 @@
     }
   }
 
+  .contacts {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__timetable {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .online-form {
     &__list {
       display: flex;

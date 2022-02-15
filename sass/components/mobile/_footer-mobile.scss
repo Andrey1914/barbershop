@@ -2,5 +2,22 @@
   .footer {
     padding-top: 44px;
     padding-bottom: 44px;
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__copyright {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer {
+    &__wrap {
+      flex-wrap: wrap;
+    }
   }
 }

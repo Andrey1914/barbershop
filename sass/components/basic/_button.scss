@@ -1,0 +1,28 @@
+.button {
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  border: 1px solid $accent-color;
+  background-color: transparent;
+
+  font-family: $text-font;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-title-color;
+  }
+
+  &--light {
+    color: $secondary-title-color;
+  }
+
+  &--dark {
+    color: $primary-title-color;
+  }
+}

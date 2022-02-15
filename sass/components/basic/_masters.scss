@@ -1,0 +1,36 @@
+.masters {
+  background-color: #f7f7f7;
+
+  &__card {
+    margin-bottom: 30px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  &__name {
+    font-family: $text-font;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    margin-bottom: 8px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: $secondary-title-color;
+  }
+
+  &__text {
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 1.35;
+
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+  }
+}

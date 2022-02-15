@@ -1,0 +1,17 @@
+.about {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__container-right {
+    margin-bottom: 40px;
+  }
+
+  &__sub-title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+}

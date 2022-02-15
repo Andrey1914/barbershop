@@ -17,10 +17,23 @@
   }
 
   .hero-right {
-    width: 306px;
+    max-width: 306px;
     &__title {
       font-weight: 700;
       font-size: 48px;
+      line-height: 1.16;
+      letter-spacing: 0.05em;
+
+      color: $primary-title-color;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero-right {
+    &__title {
+      font-weight: 600;
+      font-size: 40px;
       line-height: 1.16;
       letter-spacing: 0.05em;
 

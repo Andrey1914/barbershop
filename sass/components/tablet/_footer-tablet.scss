@@ -1,0 +1,11 @@
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
