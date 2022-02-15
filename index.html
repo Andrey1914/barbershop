@@ -37,7 +37,7 @@
                     </ul>
                 </nav>
                 <div class="header-conect">
-                    <button class="button button--light">онлайн-запись</button>
+                    <button class="button button--dark">онлайн-запись</button>
                     <a class="menu-container__tel" href="tel:+380441111111">+38 044 111 11 11</a>
                 </div>
                 <button data-menu-btn type="button" class="menu-btn is-open" aria-expanded="false">
@@ -64,12 +64,12 @@
                     <a class="menu-container__tel" href="tel:+380441111111">+38 044 111 11 11</a>
                     <button class="button menu-button">онлайн-запись</button>
                     
-                    <ul class="social-networks list">
-                        <li class="social-networks__item">
-                            <a class="social-networks__link" href="#" target="_blank">Instagram</a>
+                    <ul class="social-networks social-networks--menu list">
+                        <li class="social-networks__item social-networks__item--menu">
+                            <a class="social-networks__link social-networks__link--menu" href="#" target="_blank">Instagram</a>
                         </li>
-                        <li class="social-networks__item">
-                            <a class="social-networks__link" href="#" target="_blank">Youtube</a>
+                        <li class="social-networks__item social-networks__item--menu">
+                            <a class="social-networks__link social-networks__link--menu" href="#" target="_blank">Youtube</a>
                         </li>
                     </ul>
                 </div>
@@ -413,9 +413,9 @@
             </div>
         </section>
 
-        <section class="online-contacts section">
+        <section class="online-contacts">
             <div class="container">
-                <div class="online">
+                <div class="online section">
                     <h2 class="online-title title">Онлайн-запись</h2>
                     <form class="online-form">
                         <ul class="online-form__list list">
@@ -428,56 +428,62 @@
                         </ul>
                         <textarea class="online-form__comment" name="text" placeholder="сообщение"></textarea>
                     </form>
-                    <button class="button button--dark" type="submit">отправить</button>
+                    <button class="online__button button button--dark" type="submit">отправить</button>
                 </div>
-                <div class="contacts">
+                <div class="contacts section">
                     <h2 class="contacts-title title">Контакты</h2>
-                    <address>
-                        <ul class="contacts__list list">
-                            <li class="contacts__item">
-                                <a class="contacts__link" href="#" target="_blank">
-                                    <svg class="contacts__icon">
-                                        <use href="./images/icons.svg#icon-map-pin"></use>
-                                    </svg>
-                                    ул. Васильковая, 7А
-                                    Киев, 08132
-                                </a>
-                            </li>
-                            <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+380441111111">
-                                    <svg class="contacts__icon">
-                                        <use href="./images/icons.svg#icon-phone"></use>
-                                    </svg>
-                                    +38 044 111 11 11
-                                </a>
-                            </li>
-                            <li class="contacts__item">
-                                <a class="contacts__link" href="mailto:">
-                                    <svg class="contacts__icon">
-                                        <use href="./images/icons.svg#icon-mail"></use>
-                                    </svg>
-                                    barbershop@email.com
-                                </a>
-                            </li>
-                        </ul>
-                    </address>
-                    <p class="contacts__sub-title sub-title">время работы</p>
-                    <p class="contacts__schedule">Ежедневно с 9:00 до 22:00</p>
+                    <div class="contacts__wrap">
+                        <address>
+                            <ul class="contacts__list list">
+                                <li class="contacts__item">
+                                    <a class="contacts__link" href="#" target="_blank">
+                                        <svg class="contacts__icon">
+                                            <use href="./images/icons.svg#icon-map-pin"></use>
+                                        </svg>
+                                        ул. Васильковая, 7А
+                                        Киев, 08132
+                                    </a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a class="contacts__link" href="tel:+380441111111">
+                                        <svg class="contacts__icon">
+                                            <use href="./images/icons.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 044 111 11 11
+                                    </a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a class="contacts__link" href="mailto:">
+                                        <svg class="contacts__icon">
+                                            <use href="./images/icons.svg#icon-mail"></use>
+                                        </svg>
+                                        barbershop@email.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                        <div class="contacts__timetable">
+                            <p class="contacts__sub-title sub-title">время работы</p>
+                            <p class="contacts__schedule">Ежедневно с 9:00 до 22:00</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <ul class="social-networks__list social-networks__list--footer list">
-                <li class="social-networks__item social-networks__item--footer">
-                    <a class="social-networks__link" href="#" target="_blank">Instagram</a>
-                </li>
-                <li class="social-networks__item social-networks__item--footer">
-                    <a class="social-networks__link" href="#" target="_blank">Youtube</a>
-                </li>
-            </ul>
-            <p class="footer__copyright">&#169;Copyright 2020</p>
+            <div class="footer__wrap">
+                <p class="footer__copyright">&#169;Copyright 2020</p>
+                <ul class="social-networks__list social-networks__list--footer list">
+                    <li class="social-networks__item social-networks__item--footer">
+                        <a class="social-networks__link" href="#" target="_blank">Instagram</a>
+                    </li>
+                    <li class="social-networks__item social-networks__item--footer">
+                        <a class="social-networks__link" href="#" target="_blank">Youtube</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 
