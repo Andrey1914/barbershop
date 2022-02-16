@@ -1,0 +1,21 @@
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    display: flex;
+  }
+
+  .hero-right {
+    padding: 273px 455px 205px 93px;
+    background-color: rgba(25, 28, 38, 0.2);
+    background-image: url('../images/desktop/hero1-d1x.jpg');
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-right {
+      background-color: rgba(25, 28, 38, 0.2);
+      background-image: url('../images/desktop/hero1-d2x.jpg');
+    }
+  }
+}

@@ -5,10 +5,6 @@
     margin-bottom: 30px;
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 64px;
-  }
-
   &__name {
     font-family: $text-font;
     font-weight: normal;

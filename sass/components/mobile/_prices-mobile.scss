@@ -39,5 +39,10 @@
         rgba(23, 26, 36, 0.2) 100%
       );
     }
+
+    &__item-left,
+    &__item-right:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }

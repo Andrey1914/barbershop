@@ -8,21 +8,12 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      max-width: 416px;
+      margin-left: auto;
     }
 
     &__item {
       height: 133px;
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .benefits {
-    &__list {
-      max-width: 416px;
-      margin-left: auto;
-    }
-    &__item {
       max-width: 193px;
       padding: 20px 36px;
     }

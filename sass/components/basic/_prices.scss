@@ -23,11 +23,6 @@
     align-items: baseline;
   }
 
-  &__item-left,
-  &__item-right:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
   &__item-left::before,
   &__item-right::before {
     content: '';
