@@ -1,0 +1,11 @@
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 57px;
+    padding-bottom: 55px;
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

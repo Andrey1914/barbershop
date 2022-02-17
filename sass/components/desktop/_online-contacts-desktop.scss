@@ -1,0 +1,58 @@
+@media screen and (min-width: 1200px) {
+  .online-contacts {
+    background-image: url('../images/desktop/contacts-bg-d1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .prices {
+        background-image: url('../images/desktop/contacts-bg-d2x.png');
+      }
+    }
+    &__container {
+      display: flex;
+    }
+  }
+
+  .online {
+    width: calc(100% / 2 + 15px);
+    margin-right: 40px;
+  }
+
+  .contacts {
+    width: calc(100% / 2 - 15px);
+    padding-left: 90px;
+
+    &__list {
+      margin-bottom: 70px;
+    }
+  }
+
+  .online-form {
+    &__list {
+      display: flex;
+    }
+
+    &__input-name {
+      width: 270px;
+      margin-right: 30px;
+    }
+
+    &__input-tel {
+      width: 260px;
+    }
+
+    &__comment {
+      width: 560px;
+    }
+
+    &__input-name,
+    &__input-tel,
+    &__comment {
+      margin-bottom: 44px;
+    }
+  }
+}

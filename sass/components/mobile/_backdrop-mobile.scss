@@ -1,0 +1,46 @@
+@media screen and (max-width: 479px) {
+  .backdrop {
+    z-index: 4;
+    padding: 15px;
+    overflow-y: scroll;
+  }
+
+  .modal {
+    z-index: 5;
+    width: 280px;
+    height: 609px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .backdrop {
+    z-index: 3;
+    padding: 93px 15px;
+    overflow-y: scroll;
+  }
+
+  .modal {
+    max-width: 450px;
+    max-height: 609px;
+  }
+
+  .form {
+    z-index: 5;
+    background-color: $page-bg-color;
+    &__label {
+      font-size: 11px;
+      line-height: 14px;
+      letter-spacing: 0.03em;
+      color: $secondary-title-color;
+    }
+
+    &__checkbox {
+      height: 15px;
+      margin-bottom: 40px;
+    }
+
+    &__icon-checkbox {
+      margin-right: 7px;
+    }
+  }
+}
