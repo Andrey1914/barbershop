@@ -37,7 +37,7 @@
                     </ul>
                 </nav>
                 <div class="header-conect">
-                    <button class="button button--dark">онлайн-запись</button>
+                    <button data-modal-open type="button" class="button button--dark">онлайн-запись</button>
                     <a class="menu-container__tel" href="tel:+380441111111">+38 044 111 11 11</a>
                 </div>
                 <button data-menu-btn type="button" class="menu-btn is-open" aria-expanded="false">
@@ -62,7 +62,7 @@
                         </li>
                     </ul>
                     <a class="menu-container__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                    <button class="button menu-button">онлайн-запись</button>
+                    <button data-modal-open type="button" class="button menu-button">онлайн-запись</button>
                     
                     <ul class="social-networks social-networks--menu list">
                         <li class="social-networks__item social-networks__item--menu">
@@ -130,7 +130,7 @@
                             то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
                             готовы усовершенствовать каждого, кто к нам приходит!
                         </p>
-                        <button class="button">онлайн-запись</button>
+                        <button data-modal-open type="button" class="button">онлайн-запись</button>
                     </div>
                     
                 </div>
@@ -183,7 +183,7 @@
                         </ul>
                     </div>
                 </div>
-                <button class="prices__button button button--dark">онлайн-запись</button>
+                <button data-modal-open type="button" class="prices__button button button--dark">онлайн-запись</button>
             </div>
         </section>
         <section class="benefits section">
@@ -414,7 +414,7 @@
         </section>
 
         <section class="online-contacts">
-            <div class="container">
+            <div class="online-contacts__container container">
                 <div class="online section">
                     <h2 class="online-title title">Онлайн-запись</h2>
                     <form class="online-form">
@@ -487,6 +487,62 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn-close" data-modal-close>
+                <svg class="btn-close__icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form class="form">
+                <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label for="name" class="form__label">Имя</label>
+                        <input class="form__input" type="text" name="name" id="name">
+                        <svg class="form__input-icon">
+                            <use href="./images/icons.svg#icon-person-black"></use>
+                        </svg>
+                    </li>
+    
+                    <li class="form__item">
+                        <label for="tel" class="form__label">Телефон</label>
+                        <input class="form__input" type="tel" name="tel" id="tel">
+                        <svg class="form__input-icon">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </li>
+    
+                    <li class="form__item">
+                        <label for="mail" class="form__label">Почта</label>
+                        <input class="form__input" type="email" name="mail" id="mail">
+                        <svg class="form__input-icon">
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg>
+                    </li>
+                </ul>
+                <div class="form__comment">
+                    <label for="comment" class="form__label">Комментарий</label>
+                    <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="5"
+                        placeholder="Введите текст"></textarea>
+                </div>
+    
+                <div class="form__checkbox">
+                    <label class="form__label form__label--text" for="agree">
+                        <input class="form__checkbox-input" type="checkbox" name="agree" value="agree" id="agree">
+                        <svg class="form__icon-checkbox">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>Соглашаюсь с рассылкой и принимаю
+                        <a class="form__agree-link" href="#">Условия договора</a>
+                    </label>
+                </div>
+    
+                <button class="button form__button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
