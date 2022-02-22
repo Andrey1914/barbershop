@@ -1,6 +1,5 @@
 @media screen and (max-width: 767px) {
   .online-contacts {
-    background-color: #191c26;
     background-image: url('../images/mobile/contacts-bg-m1x.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -10,7 +9,6 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .prices {
-        background-color: #191c26;
         background-image: url('../images/mobile/contacts-bg-m2x.png');
       }
     }

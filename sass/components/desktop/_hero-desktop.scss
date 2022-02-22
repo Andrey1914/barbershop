@@ -8,6 +8,16 @@
     background-color: rgba(25, 28, 38, 0.2);
     background-image: url('../images/desktop/hero1-d1x.jpg');
     background-size: cover;
+
+    &__title {
+      font-size: 72px;
+      line-height: 1.18;
+    }
+
+    &__sub-title {
+      font-size: 18px;
+      line-height: 1.66;
+    }
   }
 
   @media (min-device-pixel-ratio: 2),

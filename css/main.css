@@ -976,7 +976,6 @@ img {
 }
 @media screen and (max-width: 767px) {
   .online-contacts {
-    background-color: #191c26;
     background-image: url("../images/mobile/contacts-bg-m1x.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -985,7 +984,6 @@ img {
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .online-contacts .prices {
-    background-color: #191c26;
     background-image: url("../images/mobile/contacts-bg-m2x.png");
   }
 }
@@ -1205,14 +1203,12 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .prices {
-    background-color: #111319;
     background-image: url("../images/tablet/prices-t1x.png");
     background-size: cover;
   }
 }
 @media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
   .prices .prices {
-    background-color: #111319;
     background-image: url("../images/tablet/prices-t2x.png");
   }
 }
@@ -1290,7 +1286,7 @@ img {
     margin: -15px;
   }
   .gallery__item {
-    flex-basis: calc((100% - 4 * 15px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
@@ -1304,7 +1300,6 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .online-contacts {
-    background-color: #191c26;
     background-image: url("../images/tablet/contacts-bg-t1x.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1313,7 +1308,6 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .online-contacts .prices {
-    background-color: #191c26;
     background-image: url("../images/tablet/contacts-bg-t2x.png");
   }
 }
@@ -1333,7 +1327,7 @@ img {
     margin: -15px;
   }
   .online-form__item {
-    flex-basis: calc((100% - 4 * 15px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
   }
   .online-form__input-name, .online-form__input-tel {
@@ -1386,6 +1380,14 @@ img {
     background-image: url("../images/desktop/hero1-d1x.jpg");
     background-size: cover;
   }
+  .hero-right__title {
+    font-size: 72px;
+    line-height: 1.18;
+  }
+  .hero-right__sub-title {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-right {
@@ -1420,14 +1422,12 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .prices {
-    background-color: #111319;
     background-image: url("../images/desktop/prices-d1x.png");
     background-size: cover;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .prices .prices {
-    background-color: #111319;
     background-image: url("../images/desktop/prices-d2x.png");
   }
 }
@@ -1537,13 +1537,13 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .online {
-    width: calc(100% / 2 + 15px);
+    width: calc(50% + 15px);
     margin-right: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    width: calc(100% / 2 - 15px);
+    width: calc(50% - 15px);
     padding-left: 90px;
   }
   .contacts__list {
