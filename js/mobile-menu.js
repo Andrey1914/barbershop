@@ -1,16 +1,33 @@
+// (() => {
+//     const menuBtnRef = document.querySelector('[data-menu-btn]');
+//     const mobileMenuRef = document.querySelector('[data-menu]');
+
+//     menuBtnRef.addEventListener('click', () => {
+//         const expanded =
+//             menuBtnRef.getAttribute("aria-expended") === 'true' || false;
+
+//         menuBtnRef.classList.toggle('is-open');
+//         menuBtnRef.setAttribute('aria-expended', !expanded);
+
+//         document.body.classList.toggle('modal-open');
+//         mobileMenuRef.classList.toggle('is-open');
+
+//     });
+// })();
+
 (() => {
-    const menuBtnRef = document.querySelector('[data-menu-btn]');
-    const mobileMenuRef = document.querySelector('[data-menu]');
+  const menuBtnRef = document.querySelector('[data-menu-button]');
+  const mobileMenuRef = document.querySelector('[data-menu]');
+  const backdropRef = document.querySelector('[data-overlay]');
 
-    menuBtnRef.addEventListener('click', () => {
-        const expanded =
-            menuBtnRef.getAttribute("aria-expended") === 'true' || false;
-        
-        menuBtnRef.classList.toggle('is-open');
-        menuBtnRef.setAttribute('aria-expended', !expanded);
+  menuBtnRef.addEventListener('click', () => {
+    const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
-        document.body.classList.toggle('modal-open');
-        mobileMenuRef.classList.toggle('is-open');
+    menuBtnRef.classList.toggle('is-open');
+    menuBtnRef.setAttribute('aria-expanded', !expanded);
 
-    });
+    backdropRef.classList.toggle('is-hidden');
+    mobileMenuRef.classList.toggle('is-open');
+    document.body.classList.toggle('menu-open');
+  });
 })();
