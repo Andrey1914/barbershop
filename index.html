@@ -777,7 +777,18 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="form">
+        <form class="online-form">
+          <ul class="online-form__list list">
+            <li class="online-form__item">
+              <input class="online-form__input-name" name="name" type="text" placeholder="Имя*" />
+            </li>
+            <li class="online-form__item">
+              <input class="online-form__input-tel" name="tel" type="tel" placeholder="Телефон*" />
+            </li>
+          </ul>
+          <textarea class="online-form__comment" name="text" placeholder="сообщение"></textarea>
+        </form>
+        <!-- <form class="form">
           <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
           <ul class="form__list">
             <li class="form__item">
@@ -834,7 +845,7 @@
           </div>
 
           <button class="button form__button" type="submit">Отправить</button>
-        </form>
+        </form> -->
       </div>
     </div>
 

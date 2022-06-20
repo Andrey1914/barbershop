@@ -12,11 +12,16 @@
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  cursor: pointer;
+  transform: scale(1);
+
+  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
     color: $primary-title-color;
+    transform: scale(1.1);
   }
 
   &--light {
