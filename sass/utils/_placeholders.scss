@@ -1,0 +1,29 @@
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+%img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+%section {
+  @include media(767px, max-width) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  @include media(768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include media(767px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
