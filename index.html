@@ -14,298 +14,248 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="container-header">
-          <nav class="navigation">
-            <a class="logo" href="#">
-              <svg class="logo__icon">
-                <use href="./images/icons.svg#icon-logo-m2x"></use>
-              </svg>
-            </a>
-            <ul class="nav list">
-              <li class="nav__item">
-                <a class="nav__link" href="#about">О нас</a>
+  <body class="page">
+    <!-- Header -->
+    <header class="header" id="back-to-top">
+      <div class="header__container container">
+        <!-- Main navigation -->
+
+        <a href="./index.html" class="logo" aria-label="company logotype">
+          <svg width="66" height="56">
+            <use href="./images/icons.svg#icon-logo-m2x"></use>
+          </svg>
+        </a>
+
+        <button type="button" class="menu-btn" aria-label="mobile-menu switch" data-menu-button>
+          <svg width="40" height="40">
+            <use
+              href="./images/icons.svg#icon-close-menu"
+              class=".menu-btn__icon menu-btn__icon--cross"
+            ></use>
+            <use
+              href="./images/icons.svg#icon-menu"
+              class=".menu-btn__icon menu-btn__icon--menu"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="backdrop is-hidden" data-overlay></div>
+
+        <div class="menu-container" data-menu>
+          <nav class="nav">
+            <ul class="main-nav">
+              <li class="main-nav__item">
+                <a href="#about-us" class="main-nav__link"> О нас </a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#prices">Услуги и цены</a>
+              <li class="main-nav__item">
+                <a href="#prices" class="main-nav__link"> Услуги и цены </a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#masters">Мастера</a>
+              <li class="main-nav__item">
+                <a href="#masters" class="main-nav__link"> Мастера </a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#contacts">Контакты</a>
+              <li class="main-nav__item">
+                <a href="#contacts" class="main-nav__link"> Контакты </a>
               </li>
             </ul>
           </nav>
-          <div class="header-conect">
-            <button data-modal-open-main type="button" class="button button--dark">
-              онлайн-запись
-            </button>
-            <a class="menu-container__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+
+          <div class="header__contacts">
+            <a href="tel:+380441111111" class="header__tel">+38 044 111 11 11</a>
+            <button class="header__btn" type="button" data-modal-open-main>онлайн-запись</button>
           </div>
-          <button data-menu-button type="button" class="menu-btn is-open" aria-expanded="false">
-            <svg
-              class="btn-close-menu"
-              aria-controls="menu-container"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-              <use class="icon-cross" href="./images/icons.svg#icon-close-menu"></use>
-            </svg>
-          </button>
 
-          <div class="menu-container" id="menu-container" data-menu>
-            <ul class="menu-nav list">
-              <li class="menu-nav__item">
-                <a class="menu-nav__link" href="#">О нас</a>
-              </li>
-              <li class="menu-nav__item">
-                <a class="menu-nav__link" href="#">Услуги и цены</a>
-              </li>
-              <li class="menu-nav__item">
-                <a class="menu-nav__link" href="#">Мастера</a>
-              </li>
-              <li class="menu-nav__item">
-                <a class="menu-nav__link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <div class="backdrop" data-overlay></div>
-            <a class="menu-container__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button data-modal-open type="button" class="button menu-button">онлайн-запись</button>
-
-            <ul class="social-networks social-networks--menu list">
-              <li class="social-networks__item social-networks__item--menu">
+          <div class="company-socials__wrap--menu">
+            <ul class="company-socials company-socials--menu">
+              <li class="company-socials__item--menu">
                 <a
-                  class="social-networks__link social-networks__link--menu"
                   href="#"
                   target="_blank"
-                  >Instagram</a
+                  rel="noopener noreferrer nofollow"
+                  class="company-socials__link company-socials__link--menu"
                 >
+                  Instagram
+                </a>
               </li>
-              <li class="social-networks__item social-networks__item--menu">
+              <li class="company-socials__item--menu">
                 <a
-                  class="social-networks__link social-networks__link--menu"
                   href="#"
                   target="_blank"
-                  >Youtube</a
+                  rel="noopener noreferrer nofollow"
+                  class="company-socials__link company-socials__link--menu"
                 >
+                  Youtube
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
+
     <main>
+      <!-- Section Hero -->
       <section class="hero">
-        <!-- <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    ./images/slider-img-1.webp    1x,
-                    ./images/slider-img-1@2x.webp 2x,
-                    ./images/slider-img-1@3x.webp 3x
-                  "
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/slider-img-1.png    1x,
-                    ./images/slider-img-1@2x.png 2x,
-                    ./images/slider-img-1@3x.png 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/slider-tab-img-1.webp    1x,
-                    ./images/slider-tab-img-1@2x.webp 2x,
-                    ./images/slider-tab-img-1@3x.webp 3x
-                  "
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/slider-tab-img-1.png    1x,
-                    ./images/slider-tab-img-1@2x.png 2x,
-                    ./images/slider-tab-img-1@3x.png 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <img src="./images/slider-img-1.png" alt="Слайдер фото 1" />
-              </picture>
-            </div>
-
-            <div class="swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    ./images/slider-img-2.webp    1x,
-                    ./images/slider-img-2@2x.webp 2x,
-                    ./images/slider-img-2@3x.webp 3x
-                  "
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/slider-img-2.png    1x,
-                    ./images/slider-img-2@2x.png 2x,
-                    ./images/slider-img-2@3x.png 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/slider-tab-img-2.webp    1x,
-                    ./images/slider-tab-img-2@2x.webp 2x,
-                    ./images/slider-tab-img-2@3x.webp 3x
-                  "
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/slider-tab-img-2.png    1x,
-                    ./images/slider-tab-img-2@2x.png 2x,
-                    ./images/slider-tab-img-2@3x.png 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <img src="./images/slider-img-2.png" alt="Слайдер фото 2" />
-              </picture>
-            </div>
-
-            <div class="swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    ./images/slider-img-3.webp    1x,
-                    ./images/slider-img-3@2x.webp 2x,
-                    ./images/slider-img-3@3x.webp 3x
-                  "
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/slider-img-3.png    1x,
-                    ./images/slider-img-3@2x.png 2x,
-                    ./images/slider-img-3@3x.png 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/slider-tab-img-3.webp    1x,
-                    ./images/slider-tab-img-3@2x.webp 2x,
-                    ./images/slider-tab-img-3@3x.webp 3x
-                  "
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/slider-tab-img-3.png    1x,
-                    ./images/slider-tab-img-3@2x.png 2x,
-                    ./images/slider-tab-img-3@3x.png 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <img src="./images/slider-img-3.png" alt="Слайдер фото 3" />
-              </picture>
-            </div>
-          </div>
-          <div
-            class="swiper-pagination slider-pagination slider-pagination--barbershop"
-            style="right: 52px; display: flex; flex-direction: column; align-items: flex-end"
-          ></div>
-        </div> -->
-        <div class="container hero-container">
-          <div class="hero-left">
-            <ul class="social-networks__list social-networks__list--hero list">
-              <li class="social-networks__item social-networks__item--hero">
-                <a class="social-networks__link" href="#" target="_blank">Instagram</a>
+        <div class="container hero__container">
+          <div class="company-socials__wrap--hero">
+            <ul class="company-socials company-socials--hero">
+              <li class="company-socials__item--hero">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="company-socials__link company-socials__link--hero"
+                >
+                  Instagram
+                </a>
               </li>
-              <li class="social-networks__item social-networks__item--hero">
-                <a class="social-networks__link" href="#" target="_blank">Youtube</a>
+              <li class="company-socials__item--hero">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="company-socials__link company-socials__link--hero"
+                >
+                  Youtube
+                </a>
               </li>
             </ul>
           </div>
-          <div class="hero-right">
-            <div class="hero-right__wrap">
-              <p class="hero-right__pre-title pre-title">A hair salon for men in Kyiv</p>
-              <h1 class="hero-right__title title">BarberShop</h1>
-              <p class="hero-right__sub-title sub-title">
+
+          <div class="hero-content">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slider-img-1.webp    1x,
+                        ./images/slider-img-1@2x.webp 2x,
+                        ./images/slider-img-1@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slider-img-1.png    1x,
+                        ./images/slider-img-1@2x.png 2x,
+                        ./images/slider-img-1@3x.png 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slider-tab-img-1.webp    1x,
+                        ./images/slider-tab-img-1@2x.webp 2x,
+                        ./images/slider-tab-img-1@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slider-tab-img-1.png    1x,
+                        ./images/slider-tab-img-1@2x.png 2x,
+                        ./images/slider-tab-img-1@3x.png 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img src="./images/slider-img-1.png" alt="Слайдер фото 1" />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slider-img-2.webp    1x,
+                        ./images/slider-img-2@2x.webp 2x,
+                        ./images/slider-img-2@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slider-img-2.png    1x,
+                        ./images/slider-img-2@2x.png 2x,
+                        ./images/slider-img-2@3x.png 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slider-tab-img-2.webp    1x,
+                        ./images/slider-tab-img-2@2x.webp 2x,
+                        ./images/slider-tab-img-2@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slider-tab-img-2.png    1x,
+                        ./images/slider-tab-img-2@2x.png 2x,
+                        ./images/slider-tab-img-2@3x.png 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img src="./images/slider-img-2.png" alt="Слайдер фото 2" />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slider-img-3.webp    1x,
+                        ./images/slider-img-3@2x.webp 2x,
+                        ./images/slider-img-3@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slider-img-3.png    1x,
+                        ./images/slider-img-3@2x.png 2x,
+                        ./images/slider-img-3@3x.png 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slider-tab-img-3.webp    1x,
+                        ./images/slider-tab-img-3@2x.webp 2x,
+                        ./images/slider-tab-img-3@3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slider-tab-img-3.png    1x,
+                        ./images/slider-tab-img-3@2x.png 2x,
+                        ./images/slider-tab-img-3@3x.png 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img src="./images/slider-img-3.png" alt="Слайдер фото 3" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                class="swiper-pagination slider-pagination slider-pagination--barbershop"
+                style="right: 52px; display: flex; flex-direction: column; align-items: flex-end"
+              ></div>
+            </div>
+
+            <div class="hero__desc">
+              <p lang="en" class="hero-content__pre-title">A hair salon for men in Kyiv</p>
+              <h1 class="hero-content__title" lang="en">BarberShop</h1>
+              <p class="hero-content__after-title">
                 Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="about__wrap">
-            <div class="about__container-left">
-              <picture>
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="
-                    ./images/tablet/about-img1-t1x.jpg 1x,
-                    ./images/tablet/about-img1-t2x.jpg 2x
-                  "
-                />
-
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="./images/desktop/about1-d1x.jpg 1x, ./images/desktop/about1-d2x.jpg 2x"
-                />
-
-                <img
-                  class="about__img"
-                  src="./images/desktop/about1-d1x.jpg"
-                  alt="Мастер наносит крем для бритья"
-                />
-              </picture>
-
-              <picture>
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="
-                    ./images/tablet/about-img2-t1x.jpg 1x,
-                    ./images/tablet/about-img2-t2x.jpg 2x
-                  "
-                />
-
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="./images/desktop/about2-d1x.jpg 1x, ./images/desktop/about2-d2x.jpg 2x"
-                />
-
-                <img src="./images/desktop/about2-d1x.jpg" alt="Мастер формирует окантовку" />
-              </picture>
-            </div>
-            <div class="about__container-right">
-              <p class="about__pre-title pre-title">О НАС</p>
-              <h2 class="about__title title">
-                Лучший Барбершоп<br />
-                твоего города
-              </h2>
-              <p class="about__sub-title sub-title">
-                Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
-              </p>
-              <p class="about__text text">
-                Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
-                когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
-                команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
-                усовершенствовать каждого, кто к нам приходит!
-              </p>
-              <button data-modal-open-second type="button" class="button">онлайн-запись</button>
             </div>
           </div>
         </div>
