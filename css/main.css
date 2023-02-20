@@ -81,12 +81,10 @@
   background-color: transparent;
   border-radius: 25px;
   cursor: pointer;
-  transform: scale(1);
   transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 .booking__btn:hover, .prices__btn:hover, .btn--dark:hover, .btn--light:hover, .header__btn:hover, .booking__btn:focus, .prices__btn:focus, .btn--dark:focus, .btn--light:focus, .header__btn:focus {
   background-color: #ff6c00;
-  transform: scale(1.2);
 }
 
 .contacts__pre-title, .gallery__pre-title--primary, .masters__pre-title--primary, .benefits__pre-title--primary, .prices__pre-title, .about-us__pre-title--primary, .hero-content__pre-title {
@@ -149,7 +147,7 @@
 }
 .company-socials__link--footer:hover, .company-socials__link:hover, .company-socials__link--footer:focus, .company-socials__link:focus {
   color: #ff6c00;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -494,7 +492,7 @@ img {
 }
 .header__tel:hover, .header__tel:focus {
   color: #ff6c00;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 @media screen and (max-width: 767px) {
   .header__tel {
@@ -651,7 +649,7 @@ img {
   transition: transform 300ms ease-in-out;
 }
 .logo:hover, .logo:focus {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 @media screen and (max-width: 767px) {
   .logo {
@@ -712,7 +710,7 @@ img {
 }
 .main-nav__link:hover, .main-nav__link:focus {
   color: #ff6c00;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 @media screen and (max-width: 767px) {
   .main-nav__link {
@@ -1275,7 +1273,7 @@ img {
   margin-top: 30px;
 }
 .achievements__item:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: rgba(157, 164, 189, 0.4);
   cursor: auto;
 }
@@ -1453,7 +1451,7 @@ img {
   transition: transform 300ms ease-in-out, fill 300ms ease-in-out;
 }
 .masters-socials__link:hover .masters-socials__icon, .masters-socials__link:focus .masters-socials__icon {
-  transform: scale(1.2);
+  transform: scale(1.1);
   fill: #ff6c00;
 }
 
@@ -1804,7 +1802,7 @@ img {
   transition: transform 300ms ease-in-out;
 }
 .contacts__link:hover, .contacts__link:focus {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .contacts__icon {

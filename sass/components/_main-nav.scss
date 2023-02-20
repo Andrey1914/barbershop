@@ -39,7 +39,7 @@
   &:hover,
   &:focus {
     color: $accentColor;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   @include media(767px, max-width) {
     margin-bottom: 64px;
