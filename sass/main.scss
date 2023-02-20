@@ -1,7 +1,37 @@
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap');
 @import './utils/variables';
-@import './utils/reset-styles';
-@import './components/basic/main-basic';
-@import './components/mobile/main-mobile';
-@import './components/tablet/main-tablet';
-@import './components/desktop/main-desktop';
+@import './utils/mixins';
+@import './base/container';
+@import './utils/placeholders';
+@import './base/normalize';
+
+@import './components/page';
+@import './components/header';
+@import './components/commons/backdrop';
+@import './components/mobile-menu';
+@import './components/commons/logo';
+@import './components/main-nav';
+@import './components/commons/btn';
+
+@import './components/hero';
+@import './components/commons/company-social-wrap';
+@import './components/hero-content';
+
+@import './components/about-us';
+
+@import './components/prices';
+@import './components/prices-wrap';
+
+@import './components/benefits';
+@import './components/achievements';
+
+@import './components/masters';
+@import './components/masters-socials';
+
+@import './components/gallery';
+
+@import './components/booking';
+@import './components/contacts';
+
+@import './components/footer';
+@import './components/slider';
+@import './components/modal';
